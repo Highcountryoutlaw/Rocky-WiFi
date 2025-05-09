@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rocky WiFi Expansion - Powered by Helium Mobile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Rocky WiFi Expansion</h1>
+    <p>Powered by Helium Mobile</p>
+    <p>Connect. Earn. Build the Future.</p>
+    <nav>
+      <a href="#plans">Plans</a> |
+      <a href="#rewards">Rewards</a> |
+      <a href="#network">Network Map</a> |
+      <a href="#connect">Connect to Rocky WiFi</a> |
+      <a href="#helpbuild">Help Build Rocky WiFi</a> |
+      <a href="#donate">Tip Creator</a> |
+      <a href="#projects">More Projects</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="plans">
+      <h2>Helium Mobile Plans</h2>
+      <ul>
+        <li><strong>Free Plan:</strong> 30 days completely free! Great for light users. Bring your same number or get a new one. SIM lock available for security.</li>
+        <li><strong>$5/Month Plan:</strong> Full network access on Helium and T-Mobile nationwide coverage.</li>
+        <li><strong>$20/Month Plan:</strong> Unlimited talk, text, and 5G data + WiFi network earnings.</li>
+      </ul>
+      <a href="https://www.helium.com/" target="_blank" style="background: #00bfa5; color: white; padding: 10px 20px; border-radius: 5px;">Join Helium Mobile (Ref: WUP40D0)</a>
+    </section>
+
+    <section id="rewards">
+      <h2>Rewards & Passive Income</h2>
+      <p>Set up Helium hotspots and earn MOBILE tokens while providing wireless coverage.</p>
+      <p>Turn your phone bill into passive income. Help eliminate cell and internet bills by earning while you connect!</p>
+    </section>
+
+    <section id="network">
+      <h2>Network Map - Live Hotspots</h2>
+      <p>Check the real-time Helium Network around you:</p>
+      <iframe src="https://explorer.helium.com" width="100%" height="600" style="border:1px solid #ccc; border-radius:10px;"></iframe>
+    </section>
+
+    <section id="connect">
+      <h2>Connect to Rocky WiFi</h2>
+      <p>Join the movement. Expand the network. Start earning.</p>
+    </section>
+
+    <section id="helpbuild">
+      <h2>Help Build Rocky WiFi</h2>
+      <p>Want to create your own network? Join our builder group and learn how you can deploy Helium Mobile hotspots and own your city's future connectivity!</p>
+    </section>
+
+    <section id="donate">
+      <h2>Support the Creator</h2>
+      <p>Help keep Rocky WiFi alive and expanding. Any support is appreciated!</p>
+
+      <button onclick="connectWallet()">Connect Wallet</button>
+
+      <p><strong>Solana Address:</strong> 2HMkWRC4B58cvaPe2LD1Tz8a3ddpxKe2ZWYqCHxL44vW</p>
+    </section>
+
+    <section id="projects">
+      <h2>Check Out More Projects:</h2>
+      <ul>
+        <li><a href="https://420.on-fleek.app" target="_blank">420 Goldenage Web3 Project</a></li>
+        <li><a href="https://420-outlaw.vercel.app" target="_blank">420 Outlaw Website</a></li>
+      </ul>
+      <h3>Coming Soon: Rocky WiFi NFTs!</h3>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built with heart and hustle by the Rocky WiFi Outlaw. Web3 is here.</p>
+  </footer>
+
+  <script>
+    async function connectWallet() {
+      if (window.solana && window.solana.isPhantom) {
+        try {
+          const resp = await window.solana.connect();
+          alert('Wallet Connected: ' + resp.publicKey.toString());
+        } catch (err) {
+          alert('Wallet connection failed!');
+        }
+      } else {
+        alert('Phantom Wallet not found! Please install it.');
+      }
+    }
+  </script>
+
+</body>
+</html>
